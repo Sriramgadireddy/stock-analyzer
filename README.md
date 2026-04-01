@@ -5,7 +5,7 @@ financial analysis to help evaluate investment decisions.
 
 ## What it does
 - Pulls 1 year of live stock data using the Yahoo Finance API
-- Calculates annual returns, daily volatility, and 50/200-day moving averages
+- Calculates annual returns, daily volatility, and 50/200 day moving averages
 - Generates automated buy, sell, or hold signals based on technical analysis
 - Produces price trend charts for each company with moving average overlays
 - Ranks all companies by annual return in a comparison bar chart
