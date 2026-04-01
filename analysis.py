@@ -3,19 +3,18 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-# companies being analyzed
-companies = {
-    "Microsoft": "MSFT",
-    "Apple": "AAPL",
-    "Wells Fargo": "WFC",
-    "JPMorgan Chase": "JPM",
-    "Oracle": "ORCL",
-    "Google": "GOOG",
-    "Nvidia": "NVDA",
-    "Amazon": "AMZN",
-    "Goldman Sachs": "GS",
-    "Boeing": "BA",
-}
+#user input for companies to analyze
+companies = {}
+print("Stock Market Analysis Tool")
+print("-" * 30)
+num = int(input("How many companies do you want to analyze? "))
+for i in range(num):
+    name = input(f"Enter company name {i+1}: ")
+    ticker = input(f"Enter ticker symbol for {name}: ")
+    companies[name] = ticker
+print("-" * 30)
+print("Fetching data and running analysis...")
+print()
 
 # pull data for each company, if you want to change the timeframe, change 1y to 3mo
 
